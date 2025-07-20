@@ -1,6 +1,13 @@
-<p align="Center" style="font-size:40px; font-weight:bold; letter-spacing:4px;">Easy Verse</p>
-<p align="Center" style="font-size:15px;"><em>Bible search plugin for Flow Launcher</em><p>
+![demo](/Images/demo.gif)
 
+<img alt="logo" align="right" src="./Images/easyverse.png" width="100" height="100">
+
+<p align="left" style="font-size:40px; font-weight:bold; letter-spacing:3px;">Easy Verse</p>
+<p align="left" style="font-size:15px;"><em>Bible search plugin for Flow Launcher</em><p>
+
+<br>
+<br>
+<br>
 
 # EasyVerse
 *Bible Search Plugin for Flow Launcher*
@@ -26,45 +33,30 @@ EasyVerse is a powerful and user-friendly Bible search plugin for [Flow Launcher
 
 1. **Download or clone** this repository into your Flow Launcher plugins directory:
    - `C:/Users/<YourUser>/AppData/Roaming/FlowLauncher/Plugins/EasyVerse`
-2. Ensure the following structure:
-   ```
-   EasyVerse/
-     main.py
-     plugin.json
-     settings.json (auto-created)
-     Images/
-     bibles/
-     easyverse/
-       __init__.py (optional)
-       bible.py
-       settings.py
-       parsing.py
-       keyword.py
-   ```
-3. **Restart Flow Launcher**. The plugin should appear in the Plugins list.
-4. **Python 3.7+ required**. Set the correct Python path in Flow Launcher settings if needed.
+2. **Restart Flow Launcher**. The plugin should appear in the Plugins list.
+3. **Python 3.7+ required**. Set the correct Python path in Flow Launcher settings if needed.
 
 ---
 
 ## Usage
 
 ### **Verse Lookup**
-- `verse jn 3 16`
-- `verse gen 1:1`
-- `verse 1co 13 4 esv`
+- `ver jn 3 16`
+- `ver gen 1:1`
+- `ver 1co 13 4 esv`
 
 ### **Keyword Search**
-- `verse find love`
-- `verse find faith jn`
-- `verse find hope rom 8 nkjv`
+- `ver find love`
+- `ver find faith jn`
+- `ver find hope rom 8 nkjv`
 
 ### **Set Default Version**
-- `verse setversion esv`
+- `ver setversion esv`
 - All future queries will use ESV unless you specify another version.
 
 ### **Book/Chapter Suggestions**
-- Type only a book (e.g., `verse jn`) to see available chapters.
-- Type a book and chapter (e.g., `verse jn 3`) to see available verses.
+- Type only a book (e.g., `ver jn`) to see available chapters.
+- Type a book and chapter (e.g., `ver jn 3`) to see available verses.
 
 ### **Error Handling**
 - If you mistype a book, EasyVerse will suggest the closest matches.
@@ -80,22 +72,6 @@ EasyVerse is a powerful and user-friendly Bible search plugin for [Flow Launcher
 
 ---
 
-## Development & Contribution
-
-- The codebase is modular and easy to extend.
-- Main logic is in `main.py`, with supporting modules in `easyverse/`.
-- PRs and suggestions are welcome!
-- For bug reports, please include your Flow Launcher version, OS, and a description of the issue.
-
----
-
 ## Credits
 
-- Bible data files are not included; please use your own or open-source versions.
 - Inspired by the Flow Launcher and open-source Bible tools community.
-
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
