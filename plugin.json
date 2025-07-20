@@ -1,0 +1,11 @@
+{
+  "ID": "EasyVerse",
+  "ActionKeyword": "ver",
+  "Name": "EasyVerse",
+  "Description": "Search Bible verses with NASB, ESV, NKJV, etc.",
+  "Author": "goldnjohn",
+  "Version": "1.0.1",
+  "Language": "python",
+  "ExecuteFileName": "main.py",
+  "IcoPath": "Images/easyverse.png"
+}
